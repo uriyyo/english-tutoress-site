@@ -2,13 +2,15 @@ import {Container} from "@mui/material";
 import Typography from "@mui/material/Typography";
 import PagePart from "./PagePart.tsx";
 import {red} from "@mui/material/colors";
+import imgUrl from '/src/assets/img/main.png';
 
 function ProfileImage() {
     return (
         <Container sx={{display: {xs: 'none', sm: 'flex'}}}>
             <img
                 style={{borderRadius: 20, maxWidth: 600, width: "100%", alignSelf: 'center'}}
-                src="/src/assets/img/main.png" alt='main'
+                src={imgUrl}
+                alt='main'
             />
         </Container>
     );
